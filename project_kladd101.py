@@ -1,21 +1,16 @@
-#BMI calculator
-height = float(input("enter your height in m: "))
-weight = float(input("enter your weight in kg: "))
+# # Import the random module here
+# import random 
 
+# # Split string method
+# names_string = input("Give me everybody's names, separated by a comma. ")
+# names = names_string.split(", ")
+# # 🚨 Don't change the code above 👆
 
-bmi = round(weight / (height*height))
+# #Write your code below this line 👇
 
-if bmi < 18.5:
-    print(f"Your BMI is {bmi}, you have a underweight weight.")
+# random_gen = random.randint(0, len(names) - 1)
+# print(len(names))
+# print(f"{names[random_gen]} is going to buy the meal today!")
 
-elif bmi > 18.5 and bmi < 25:
-    print(f"Your BMI is {bmi}, you have a normal weight.")
-
-elif bmi > 25 and bmi < 30:
-    print(f"Your BMI is {bmi}, you have a  slightly overweight.")
-
-elif bmi > 30 and bmi < 35:
-    print(f"Your BMI is {bmi}, you  are obese.")
-
-else:
-    print(f"Your BMI is {bmi}, you are clinically obese.")
+for i in range(1,14):
+print("test")
