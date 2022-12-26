@@ -1,7 +1,6 @@
+#making my first hangman
 import random
 import functions
-#making my first hangman
-
 
 lst_words = ["bambus", "phone", "elephant"]
 random_word = random.choice(lst_words)
@@ -35,29 +34,6 @@ while True:
 
 
 
-    # def vizualize(num):
-    #     if attempts == 5:
-    #         print(head)
-    #     elif attempts == 4:
-    #         print(head)
-    #         print(rightarm)
-    #     elif attempts == 3:
-    #         print(head)
-    #         print(leftarm, body)
-    #     elif attempts ==2:
-    #         print(head)
-    #         print(leftarm, body, rightarm)
-    #     elif attempts ==1:
-    #         print(head)
-    #         print(rightarm, body, leftarm)
-    #         print(leftleg)
-    #     elif attempts ==0:
-    #         print(head)
-    #         print(rightarm, body, leftarm)
-    #         print(leftleg, rightleg)
-    
-    # print('\n')
-    # vizualize(attempts)
 
 
 
@@ -65,13 +41,3 @@ while True:
 
 
 
-
-
-# my_hangman ='''
-#      O
-#     /|\ 
-#     / \ 
-# '''
-
-
-# print(my_hangman)

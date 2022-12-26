@@ -54,7 +54,7 @@
 #     travel_log[-1]['country'] = country
 #     travel_log[-1]['visits'] = visit
 #     travel_log[-1]['cities'] = city
-        
+
 
 
 
@@ -65,8 +65,7 @@
 
 # print('hello')
 
-a = 5
-b = 5
+import re 
 
-c = a%b
-print(c)
+test = re.split("h", "what")
+print(test)
