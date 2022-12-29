@@ -65,7 +65,7 @@
 
 # print('hello')
 
-import re 
+# for i in range(1,20):
+#     print(i)
 
-test = re.split("h", "what")
-print(test)
+

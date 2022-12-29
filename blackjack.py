@@ -3,11 +3,13 @@ from functions.blackjack_func import sum21_and_11
 
 card_score = [11,2,3,4,5,7,8,9,10,10,10,10]
 
-welcome = input('hello and welcome! do you want to play one game blackjack?: (y/n): ').lower()
-if welcome == 'n':
-    print('see you another time!')
-    exit()    
+ 
+
 def blackjack():
+    welcome = input('hello and welcome! do you want to play one game blackjack?: (y/n): ').lower()
+    if welcome == 'n':
+        print('see you another time!')
+        exit()   
 
     while True:        
         player = [random.choice(card_score), random.choice(card_score)]
@@ -29,9 +31,6 @@ def blackjack():
             # print(f'your cards: {player}    and your score: {sum(player)}')
         
         
-        
-    
-        
         #dealer cards
         dealer.append(random.choice(card_score))
         dealer_11 = sum21_and_11(dealer)
@@ -42,6 +41,7 @@ def blackjack():
             print('dealer stand')
             print(f'dealers card: {dealer_11}  and score: {sum(dealer_11)}')
 
+
         #who is winner?
         if sum(player_11) > 21:
             print(f'you lose, score: {sum(player_11)}')
@@ -50,19 +50,22 @@ def blackjack():
             print('player wins!')
             
         elif sum(player_11) == sum(dealer_11):
-            print('it is a draw!')
+            print('dealer wins!')
             
         elif sum(dealer_11) > 21 and sum(player_11) < 21:
             print('player wins!')
 
         else:
             print('dealer wins!')
-            
+
+
+
         play_again = input('Do you want to play again?: (y/n): ').lower()
         if play_again == 'y':
             blackjack()
         else:
             print('thank you for the game')
             break
+
 
 blackjack()
